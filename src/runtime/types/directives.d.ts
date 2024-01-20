@@ -21,6 +21,7 @@ declare global {
 declare module 'vue' {
   export interface ComponentCustomProperties {
     vPosthogCapture: ObjectDirective<HTMLElement, PosthogCaptureEvent | string>;
+    vPosthogFeatureFlag: ObjectDirective<HTMLElement, string>;
   }
 }
 export {};

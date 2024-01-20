@@ -73,6 +73,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPlugin(resolve('./runtime/plugins/directives'));
     addPlugin(resolve('./runtime/plugins/posthog.client'));
+    addPlugin(resolve('./runtime/plugins/posthog.server'));
 
     addTypeTemplate({
       filename: 'types/posthog-directives.d.ts',
